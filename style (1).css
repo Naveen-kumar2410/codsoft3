@@ -1,0 +1,657 @@
+/* General Reset */
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(252, 251, 251);
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Discount Banner */
+.discount {
+    padding: 3px;
+    text-align: center;
+    height: 5vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #0bc1d8;
+    color: #faf9f9;
+    font-weight: bold;
+}
+
+.discount p {
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px 20px;
+    background-color: rgb(249, 252, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 5vh; /* Position the navbar below the discount banner */
+    z-index: 999; /* Ensure navbar is below the discount banner */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow */
+}
+
+/* Menu List */
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    justify-content: center;
+    margin-left: 40px;
+    position: relative; /* Needed for dropdown positioning */
+}
+
+/* Menu List Items */
+.menu li {
+    position: relative; /* Make sure the dropdown is positioned relative to each li */
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    text-align:center;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    color: rgb(24, 180, 180);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position the dropdown directly below the menu item */
+    left: 0;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 160px; /* Ensure the dropdown menu is wide enough */
+}
+
+/* Dropdown Menu Links */
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Hover effect for dropdown links */
+.dropdown-menu a:hover {
+    background-color: #9bbef2;
+    color: #070707;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block; /* Display dropdown when hovering */
+    color: #000;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.icon a{
+    color: black;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.icon a:hover{
+    color: rgb(11, 185, 229);
+}
+
+
+#hero {
+    width: 100%; 
+    height: 100vh; /* Full viewport height */
+    background-size: cover; /* Ensure the background covers the area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+  }
+  
+    
+
+
+
+  .content .steps .step img {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+.content .steps .step img:hover {
+    transform: scale(1.1); /* Zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+
+
+
+
+
+#icon-section{
+    display: flex;
+}
+
+
+ .architecture{
+   display: flex;
+   
+   margin-top: 50px;
+   size: 2rem;
+  background-color: #f9f6f6;
+  width: 100%;
+ }
+
+ .arc-image img{
+    width: 60%;
+    margin-left: 100px;
+    border-radius: 10%;
+    
+ }
+.arch-font{
+    margin-left: 50px;
+}
+ .arch-font h3 {
+    font-size: 1.5rem;
+ }
+
+ .arch-font p{
+    font-style:initial;
+    font-size: 1rem;
+ }
+
+ /* cafe-design */
+
+ .cafe-design {
+       margin-top: 50px;
+       background-color: #fdf7f7;
+       padding: 2px;
+}
+
+.cafe-design h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.menu-cafe ul {
+    list-style-type: none; /* Removes bullet points */
+    display: flex; /* Aligns the list items horizontally */
+    justify-content: first baseline; /* Centers the list horizontally */
+    gap: 30px; /* Adds space between the list items */
+    padding: 0;
+    margin-left: 100px;
+}
+
+.menu-cafe li a {
+    text-decoration: none; /* Removes underline from links */
+    font-size: 18px; /* Adjusts link font size */
+    color: #000; /* Link color */
+    padding: 10px;
+}
+
+.menu-cafe li a:hover {
+    color: #00aaff; /* Optional: Changes color on hover */
+}
+
+#discussion{
+    display: flex;
+    padding: 80px;
+}
+.cafe-image img{
+    padding-right: 50px;
+    width: 450px;
+    height: 446px;
+}
+.cafe-text
+{
+    font-size: 1.2rem;
+    
+}
+
+.cafe-text button{
+    margin-top: 50px;
+  padding: 10px;
+  color: white;
+  background-color: #00aaff;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+}
+.cafe-text button:hover{
+    background-color: #44a7d8;
+}
+
+#line{
+    padding: 2px;
+    width: 70%;
+    background-color: #000;
+    margin-left: 100px;
+}
+
+/* .footer{
+    background-color: black;
+    width: 100%;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+ */
+
+ /* General Styles */
+/* General Styles */
+.cafe-footer {
+    background-color: #000; /* Dark background */
+    padding: 40px 0;
+    color: #3b677d; /* Link text color */
+}
+
+.cta-button {
+    text-align: center; /* Center align the button */
+    margin-bottom: 50px; /* Adds spacing between button and the columns */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Space out the columns evenly */
+    gap: 40px; /* Space between columns */
+}
+
+.footer-column {
+    text-align: left; /* Align text to the left */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    text-align: left; /* Left-align the text inside each list item */
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #3d8db5; /* Link text color */
+    font-size: 16px;
+    transition: color 0.3s;
+    display: inline-block; /* Ensure each link behaves like a block */
+    width: 100%; /* Take full width to align items uniformly */
+}
+
+.footer-column ul li a:hover {
+    color: #fff; /* Hover effect color */
+}
+
+.cta-button a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00aaff; /* Button background */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button a:hover {
+    background-color: #0077cc;
+}
+
+/* New tag style */
+
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+#designers-section {
+    display: flex;
+    justify-content: space-between; /* Spread content evenly */
+    align-items: center; /* Vertically center content */
+    padding: 80px; /* Add some padding */
+    background-color: #f7f3f3; /* Light background for contrast */
+}
+
+#designer-content {
+    max-width: 50%; /* Take up half the width */
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+#designer-content h1 {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#designer-content h3 {
+    font-size: 1.8rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#designer-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#designer-content button {
+    padding: 12px 25px;
+    background-color: #2279a8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#designer-content button:hover {
+    background-color: #789ae4;
+}
+
+
+#designer-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#suppliers-logo {
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    gap: 20px; 
+    padding: 50px;
+    padding-right: 50px;
+}
+
+.grid-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+   
+}
+.grid-item:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+    
+}
+
+
+#suppliers{
+    display: flex;
+    padding: 80px;
+}
+.grid-item{
+    width: 200px;
+    height: 200px;
+}
+.suppliers-content{
+    padding-left: 100px;
+}
+.suppliers-content h1{
+    font-size: 3rem;
+}
+.suppliers-content h2{
+    font-size: 1.2rem;
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    border: 10px solid rgb(127, 121, 121);
+    padding-left: 20px;
+   justify-content: center;
+   align-items: center;
+}
+
+/* review */
+.reviews-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.reviews-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wraps to the next row if screen is small */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-image img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.review-content blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.customer-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.customer-location {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.view-all:hover {
+    background-color: #0056b3;
+}
+
+
+/* scfrolling */
+
+.style-section{
+    padding: 60px 0;
+    background-color: #f7f7f8;
+    text-align: center;
+}
+
+
+#space {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4994da;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 120px;
+    padding: 0 20px;
+    margin: 0 auto;
+    overflow: hidden; /* Hide the scrollbar */
+    white-space: nowrap; /* Prevent line breaks */
+    scroll-snap-type: x mandatory; /* Enable smooth snap scroll */
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar in webkit browsers */
+}
+
+/* Smooth scrolling */
+.wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.design-item {
+    background-color: #97daf2;
+    border-radius: 15px;
+    width: 300px; /* Consistent card width */
+    flex: 0 0 auto; /* Ensure the cards do not shrink or stretch */
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(11, 11, 11, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.design-item :hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Image Styling for Consistent Size */
+.design-item  .image img {
+    width: 100%;
+    height: 250px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures image fits within bounds */
+    
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(11, 11, 11, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.design-item :hover .image img {
+    transform: scale(1.05); /* Slightly zoom the image on hover */
+}
+
+.design-item  h3 {
+    font-size: 1.8rem;
+    color: #0a0909;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+
+/* booking */
+
+.content {
+    text-align: center;
+    max-width: 1200px; /* Sets the max width to keep the layout balanced */
+    padding: 50px;
+    margin: 0 auto; /* Centers the content horizontally */
+   
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px; /* Adds padding to the sides for balanced alignment */
+}
+
+.step {
+    background-color: rgb(251, 248, 248);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    flex: 1; /* Allows each step to have equal width */
+    max-width: 280px; /* Optional: limits max width for better balance */
+}
+
+.step img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.step-number {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* logo */
+
+
+
+.logo img {
+    height: 80px; /* Set a height that fits well within the navbar */
+    width: 120px;  /* Keeps the aspect ratio of the logo */
+}
